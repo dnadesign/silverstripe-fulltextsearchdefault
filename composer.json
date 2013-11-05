@@ -1,0 +1,14 @@
+{
+	"name": "dnadesign/fulltextsearchdefault",
+	"description": "Basic implementation of a FulltextSeach index and search form in SilverStripe",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "solr", "fulltext", "search"],
+	"authors": [{
+		"name": "Will Rossiter",
+		"email": "will.rossiter@dna.co.nz"
+	}],
+	"require": {
+		"silverstripe/fulltextsearch": "dev-master#15daed3edc3d8ab7f985c9af3dc6c1de2930126b"
+	},
+	"minimum-stability": "dev"
+}
