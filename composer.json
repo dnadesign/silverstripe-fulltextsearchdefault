@@ -1,5 +1,5 @@
 {
-	"name": "dnadesign/fulltextsearchdefault",
+	"name": "dnadesign/silverstripe-fulltextsearchdefault",
 	"description": "Basic implementation of a FulltextSeach index and search form in SilverStripe",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "solr", "fulltext", "search"],
