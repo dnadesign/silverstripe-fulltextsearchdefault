@@ -10,5 +10,8 @@
 	"require": {
 		"silverstripe/fulltextsearch": "dev-master#15daed3edc3d8ab7f985c9af3dc6c1de2930126b"
 	},
+	"extra": {
+        	"installer-name": "fulltextsearchdefault"
+    	},
 	"minimum-stability": "dev"
 }
