@@ -26,7 +26,7 @@ class FulltextSearchDefaultIndex extends SolrIndex {
 		$stored = (Director::isDev()) ? 'true' : 'false';
 
 		// Fields are available for the search
-		$this->addFulltextField('Title', 'Text', array('boost' => '3'));
+		$this->addFulltextField('Title', 'Text'); //, array('boost' => '3')
 		$this->addFulltextField('Link', 'Text');
 		$this->addFulltextField('Content', 'HTMLText', array(
 			'stored' => $stored
@@ -105,7 +105,7 @@ class FulltextSearchDefaultIndex extends SolrIndex {
 		// for this purpose because it only writes into multiValue=true
 		// fields, and those can't be (reliably) sorted on.
 		$this->_addField($doc, $object, $this->getCustomPropertyFieldData('Title', $object));
-		$this->_addField($doc, $object, $this->getCustomPropertyFieldData('LastEdited', $object, 'SSDatetime', $lastEditedField));	
+		$this->_addField($doc, $object, $this->getCustomPropertyFieldData('LastEdited', $object, 'SSDatetime'));	
 		
 		$this->getService()->addDocument($doc);
 
