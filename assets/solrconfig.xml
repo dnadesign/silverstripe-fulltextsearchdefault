@@ -124,7 +124,7 @@
        WARNING: See also the <mainIndex> section below for parameters
        that overfor Solr's main Lucene index.
     -->
-  <indexDefaults>
+  <indexConfig>
 
     <useCompoundFile>false</useCompoundFile>
 
@@ -195,14 +195,14 @@
          Default is 128 and is likely good for most everyone.
       -->
     <!-- <termIndexInterval>256</termIndexInterval> -->
-  </indexDefaults>
+
 
   <!-- Main Index
 
        Values here override the values in the <indexDefaults> section
        for the main on disk index.
     -->
-  <mainIndex>
+
 
     <useCompoundFile>false</useCompoundFile>
     <ramBufferSizeMB>32</ramBufferSizeMB>
@@ -263,7 +263,7 @@
       -->
      <infoStream file="INFOSTREAM.txt">false</infoStream> 
 
-  </mainIndex>
+  </indexConfig>
 
   <!-- JMX
        
